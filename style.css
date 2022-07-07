@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* colors  */
+:root {
+  /* primary */
+  --dark-cyan: hsla(192, 37%, 48%, 1);
+  --dark-violet: hsla(268, 34%, 53%, 1);
+  /* secondary */
+  --light-cyan: hsla(192, 90%, 77%, 1);
+  --light-violet: hsla(268, 100%, 86%, 1);
+  /* neutral */
+  --black: rgb(55, 55, 82);
+  --gray: hsla(240, 10%, 57%, 1);
+  --white: hsla(0, 0%, 98%, 1);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+  font-family: 'IBM Plex Sans';
+  background-color: var(--white);
+}
+
+/* headings */
+.h1 {
+  font: 900 4rem/100% Red Hat Display, serif;
+  color: var(--black);
+}
+
+.h2 {
+  font: 900 2.5rem/110% Red Hat Display, serif;
+  color: var(--black);
+}
+
+.body-text {
+  font: 500 1.125rem/144% Red Hat Display, serif;
+  color: var(--gray);
+}
+
+.overline {
+  font: 900 16px/160% Red Hat Display, serif;
+  color: var(--dark-cyan);
+  text-transform: uppercase;
+}
+
+
+/* buttons */
+.btn-1,
+.btn-2 {
+  font: 900 1rem/160% Red Hat Display, serif;
+  color: var(--white);
+  border-radius: 50%;
+}
+
+/* highlighted button text */
+.btn-1 span {
+  color: var(--light-cyan);
+}
+
+.btn-2 span {
+  color: var(--light-violet);
+}
+
+.btn-1 {
+  background-color: var(--dark-cyan);
+}
+
+.btn-2:hover {
+  background-color: var(--light-cyan);
+}
+
+.btn-2 {
+  background-color: var(--dark-violet);
+}
+
+.btn-2:hover {
+  background-color: var(--light-violet);
+}
