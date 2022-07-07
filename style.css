@@ -175,9 +175,19 @@ header {
 }
 
 .hero-img-left {
+  content: url(./assets/desktop/image-hero-left.png);
   transform: translateX(-32px);
 }
 
+.hero-img-left:hover {
+  content: url(./assets/desktop/image-hero-left-hover.png);
+}
+
 .hero-img-right {
+  content: url(./assets/desktop/image-hero-right.png);
   transform: translateX(32px);
+}
+
+.hero-img-right:hover {
+  content: url(./assets/desktop/image-hero-right-hover.png);
 }
