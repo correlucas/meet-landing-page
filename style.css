@@ -27,6 +27,13 @@ select {
   font: inherit;
 }
 
+
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* colors  */
 :root {
   /* primary */
@@ -39,6 +46,9 @@ select {
   --black: rgb(55, 55, 82);
   --gray: hsla(240, 10%, 57%, 1);
   --white: hsla(0, 0%, 98%, 1);
+  /* buttom hover */
+  --cyan-hover: hsla(192, 54%, 64%, 1);
+  --violet-hover: hsla(268, 55%, 71%, 1);
 }
 
 body {
@@ -50,6 +60,8 @@ body {
   font-family: 'IBM Plex Sans';
   background-color: var(--white);
 }
+
+/* *** utilities *** */
 
 /* headings */
 .h1 {
@@ -79,10 +91,34 @@ body {
 .btn-2 {
   font: 900 1rem/160% Red Hat Display, serif;
   color: var(--white);
-  border-radius: 50%;
+  padding: 16px 40px;
+  border-radius: 2rem;
 }
 
 /* highlighted button text */
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-1 {
+  background-color: var(--dark-cyan);
+}
+
+.btn-1:hover {
+  background-color: var(--cyan-hover);
+}
+
+
+.btn-2 {
+  background-color: var(--dark-violet);
+}
+
+.btn-2:hover {
+  background-color: var(--violet-hover);
+}
+
 .btn-1 span {
   color: var(--light-cyan);
 }
@@ -91,18 +127,57 @@ body {
   color: var(--light-violet);
 }
 
-.btn-1 {
-  background-color: var(--dark-cyan);
+
+/* padding and margins */
+.pb-42 {
+  padding-bottom: 42px;
 }
 
-.btn-2:hover {
-  background-color: var(--light-cyan);
+/* *** utilities *** */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0 60px 0;
 }
 
-.btn-2 {
-  background-color: var(--dark-violet);
+.hero h1 {
+  max-width: 10ch;
+  margin: 0 auto;
 }
 
-.btn-2:hover {
-  background-color: var(--light-violet);
+.hero p {
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1460px;
+}
+
+.hero-wrapper {
+  display: flex;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .hero {
+  max-width: 580px;
+} */
+
+.hero-img {
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero-img-left {
+  transform: translateX(-32px);
+}
+
+.hero-img-right {
+  transform: translateX(32px);
 }
