@@ -199,7 +199,7 @@ header {
 
 .hero-img-right {
   content: url(./assets/desktop/image-hero-right.png);
-  transform: translateX(32px);
+  transform: translate(32px, 24px);
 }
 
 .hero-img-right:hover {
@@ -223,7 +223,7 @@ header {
   font: 900 1rem/160% Red Hat Display, serif;
   color: var(--gray);
 
-  border: 0.0625rem solid var(--light-gray);
+  border: 1.5px solid var(--light-gray);
   border-radius: 100px;
   margin: 0 auto;
   width: 56px;
@@ -239,4 +239,37 @@ header {
   width: 1px;
   height: 84px;
   background-color: var(--light-gray);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1110px;
+  /* margin: 0px 150px; */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.gallery-container {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-grid img {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: ease-in-out 0.5s;
+}
+
+.gallery-grid img:hover {
+  transition: linear 0.3s;
+  transform: scale(1.05);
+  filter: saturate(2);
+  transition: ease-in-out 0.5s;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
 }
