@@ -204,7 +204,8 @@ header {
 
 .hero-img-left {
   content: url(./assets/desktop/image-hero-left.png);
-  transform: translateX(-32px);
+  transform: translateX(-30px);
+  margin-bottom: 48px;
 }
 
 .hero-img-left:hover {
@@ -215,7 +216,8 @@ header {
 
 .hero-img-right {
   content: url(./assets/desktop/image-hero-right.png);
-  transform: translate(32px, 16px);
+  transform: translateX(30px);
+  margin-bottom: -48px;
 }
 
 .hero-img-right:hover {
@@ -231,10 +233,6 @@ header {
 }
 
 .number-one {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
   font: 900 1rem/160% Red Hat Display, serif;
   color: var(--gray);
 
@@ -246,9 +244,6 @@ header {
 }
 
 .number-bar {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   margin: 0 auto;
   content: "";
   width: 1px;
