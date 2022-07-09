@@ -232,10 +232,11 @@ header {
   padding-top: 114px;
 }
 
-.number-one {
+.number-one,
+.number-two {
   font: 900 1rem/160% Red Hat Display, serif;
   color: var(--gray);
-
+  background-color: var(--white);
   border: 1.5px solid var(--light-gray);
   border-radius: 100px;
   margin: 0 auto;
@@ -262,10 +263,19 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  max-width: 1110px;
   padding-top: 64px;
   padding-bottom: 64px;
 }
+
+/* max-width 1110px centered */
+
+.gallery-grid,
+footer {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* *** */
 
 .gallery-container {
   overflow: hidden;
@@ -301,3 +311,35 @@ header {
 .explainer-section-wrapper .h2 {
   padding-top: 22px;
 }
+
+
+/* footer section */
+.footer-wrapper {
+  background-color: var(--dark-cyan);
+  position: relative;
+  z-index: -1;
+  height: 350px;
+  margin-top: -28px;
+}
+
+.footer-wrapper .body-text,
+.footer-wrapper .h2 {
+  color: var(--white);
+}
+
+.footer-wrapper .btn-1 {
+  background-color: var(--dark-violet);
+}
+
+
+/* .footer-wrapper::before {
+  content: "";
+  background-image: url(./assets/desktop/image-footer.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+} */
