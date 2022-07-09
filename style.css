@@ -289,8 +289,15 @@ header {
 
 .explainer-section-wrapper {
   flex-direction: column;
-  /* max-width: 540px; */
+  max-width: 520px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 78px;
+}
+
+.explainer-section-wrapper .body-text {
+  padding-top: 38px;
+}
+
+.explainer-section-wrapper .h2 {
+  padding-top: 22px;
 }
