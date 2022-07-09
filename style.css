@@ -322,21 +322,30 @@ footer {
   margin-top: -28px;
 }
 
+.flex footer {
+  gap: 80px;
+  justify-content: space-between;
+}
+
 .footer-wrapper .body-text,
 .footer-wrapper .h2 {
   color: var(--white);
+  max-width: 350px;
+}
+
+.footer-wrapper .body-text {
+  font-weight: 500;
 }
 
 .footer-wrapper .btn-1 {
   background-color: var(--dark-violet);
 }
 
-/* .footer-wrapper .container {
-  min-width: 5000px;
-} */
+.footer-wrapper .btn-1:hover {
+  background-color: var(--cyan-hover);
+}
 
-
-/* .footer-wrapper::before {
+.footer-wrapper::before {
   content: "";
   background-image: url(./assets/desktop/image-footer.jpg);
   background-size: cover;
@@ -346,4 +355,5 @@ footer {
   bottom: 0px;
   left: 0px;
   opacity: 0.25;
-} */
+  z-index: -5;
+}
