@@ -331,6 +331,10 @@ footer {
   background-color: var(--dark-violet);
 }
 
+/* .footer-wrapper .container {
+  min-width: 5000px;
+} */
+
 
 /* .footer-wrapper::before {
   content: "";
