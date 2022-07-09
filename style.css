@@ -53,13 +53,14 @@ button {
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   min-height: 100vh;
   line-height: 1.3;
   text-rendering: optimizeSpeed;
   font-family: 'IBM Plex Sans';
   background-color: var(--white);
+  margin: 0;
 }
 
 /* *** utilities *** */
@@ -89,7 +90,8 @@ body {
 
 /* buttons */
 .btn-1,
-.btn-2 {
+.btn-2,
+.btn-3 {
   font: 900 1rem/160% Red Hat Display, serif;
   color: var(--white);
   padding: 16px 40px;
@@ -113,11 +115,13 @@ body {
 }
 
 
-.btn-2 {
+.btn-2,
+.btn-3 {
   background-color: var(--dark-violet);
 }
 
-.btn-2:hover {
+.btn-2:hover,
+.btn-3:hover {
   background-color: var(--violet-hover);
 }
 
@@ -182,7 +186,7 @@ header {
 /* hero section */
 
 .container {
-  max-width: 1460px;
+  /* max-width: 1460px; */
 }
 
 .hero-wrapper {
@@ -317,9 +321,14 @@ footer {
 .footer-wrapper {
   background-color: var(--dark-cyan);
   position: relative;
-  z-index: -1;
+  z-index: 1;
   height: 350px;
   margin-top: -28px;
+}
+
+.number-two {
+  position: relative;
+  z-index: 2;
 }
 
 .flex footer {
@@ -334,11 +343,7 @@ footer {
 }
 
 .footer-wrapper .body-text {
-  font-weight: 500;
-}
-
-.footer-wrapper .btn-1 {
-  background-color: var(--dark-violet);
+  font-weight: 300;
 }
 
 .footer-wrapper .btn-1:hover {
@@ -354,6 +359,6 @@ footer {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.25;
+  opacity: 0.2;
   z-index: -5;
 }
