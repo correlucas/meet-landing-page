@@ -224,11 +224,6 @@ header {
   content: url(./assets/tablet/image-hero.png);
 }
 
-.hero-img-mobile:hover {
-  filter: grayscale(10);
-  transition: ease-in 2s;
-  content: url(./assets/tablet/image-hero-hover.png);
-}
 
 .hero-img-left {
   content: url(./assets/desktop/image-hero-left.png);
@@ -318,7 +313,7 @@ footer {
 
 .gallery-grid img:hover {
   transition: linear 0.3s;
-  transform: scale(1.05) translateX(3px);
+  transform: scale(1.05) translateX(6px);
   filter: saturate(2);
   transition: ease-in 0.3s;
 }
@@ -389,8 +384,6 @@ footer {
 
 /* breakpoints */
 
-/* tablet breakpoint */
-
 @media (max-width: 1230px) {
 
   .flex-hero {
@@ -405,6 +398,10 @@ footer {
   .hero-img-mobile {
     display: block;
     padding-bottom: 70px;
+  }
+
+  .hero-img-mobile:hover {
+    content: url(./assets/tablet/image-hero-hover.png);
   }
 
   .hero-wrapper .body-text {
@@ -433,6 +430,3 @@ footer {
     max-width: 535px;
   }
 }
-
-/* mobile breakpoint */
-@media (max-width: 800px) {}
