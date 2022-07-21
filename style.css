@@ -205,6 +205,7 @@ header {
 
 .hero-wrapper .body-text {
   max-width: 36.25rem;
+  overflow: hidden;
 }
 
 /* flex class for all the page */
@@ -232,23 +233,11 @@ header {
   margin-bottom: 3rem;
 }
 
-/* .hero-img-left:hover {
-  content: url(./assets/desktop/image-hero-left-hover.png);
-  filter: grayscale(10);
-  transition: ease-in 2s;
-} */
-
 .hero-img-right {
   content: url(./assets/desktop/image-hero-right.png);
   transform: translateX(1.875rem);
   margin-bottom: -3rem;
 }
-
-/* .hero-img-right:hover {
-  filter: grayscale(10);
-  transition: ease-in 2s;
-  content: url(./assets/desktop/image-hero-right-hover.png);
-} */
 
 
 /* dividers */
@@ -399,9 +388,13 @@ footer {
     display: none;
   }
 
+
   .hero-img-mobile {
-    display: block;
+    display: flex;
     padding-bottom: 4.375rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    /* width: 100%; */
   }
 
   .hero-wrapper .body-text {
@@ -501,7 +494,7 @@ footer {
   }
 
   .hero-img-mobile {
-    max-width: 25.625rem;
+    max-width: 410px;
   }
 
   .footer-wrapper::before {
