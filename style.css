@@ -229,13 +229,11 @@ header {
 
 .hero-img-left {
   content: url(./assets/desktop/image-hero-left.png);
-  transform: translateX(-1.875rem);
   margin-bottom: 3rem;
 }
 
 .hero-img-right {
   content: url(./assets/desktop/image-hero-right.png);
-  transform: translateX(1.875rem);
   margin-bottom: -3rem;
 }
 
