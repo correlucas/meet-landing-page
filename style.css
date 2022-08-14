@@ -230,11 +230,27 @@ header {
 .hero-img-left {
   content: url(./assets/desktop/image-hero-left.png);
   margin-bottom: 3rem;
+  transition: ease 0.5s;
 }
 
 .hero-img-right {
   content: url(./assets/desktop/image-hero-right.png);
   margin-bottom: -3rem;
+  transition: ease 0.5s;
+}
+
+.hero-img-left:hover {
+  content: url(./assets/desktop/image-hero-left-hover.png);
+  margin-bottom: 3rem;
+  transition: ease 0.5s;
+  filter: saturate(0.5);
+}
+
+.hero-img-right:hover {
+  content: url(./assets/desktop/image-hero-right-hover.png);
+  margin-bottom: -3rem;
+  transition: ease 0.5s;
+  filter: saturate(0.5);
 }
 
 
@@ -305,10 +321,19 @@ footer {
 }
 
 .gallery-grid img:hover {
-  transition: linear 0.3s;
+  transition: linear 0.5s;
   transform: scale(1.05) translateX(0.1875rem);
   filter: saturate(2);
-  transition: ease-in 0.3s;
+}
+
+.gallery-grid {
+  transition: linear 0.5s;
+}
+
+.gallery-grid:hover>.gallery-container:not(:hover) {
+  filter: grayscale(0.6);
+  opacity: 0.8;
+  transition: linear 0.5s;
 }
 
 /* explainer section */
@@ -393,6 +418,10 @@ footer {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     /* width: 100%; */
+  }
+
+  .hero-img-mobile:hover {
+    content: url(./assets/tablet/image-hero-hover.png);
   }
 
   .hero-wrapper .body-text {
@@ -503,5 +532,28 @@ footer {
 @media (max-width: 25rem) {
   .btn {
     flex-direction: column;
+  }
+}
+
+.hero-img-left,
+.hero-img-right,
+.meet-logo {
+  -webkit-animation: slideIn 1s ease-in;
+  animation: slideIn 1s ease-out;
+}
+
+/* intro animation */
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
