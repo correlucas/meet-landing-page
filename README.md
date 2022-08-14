@@ -21,7 +21,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/meet-landing-page-vanilla-css-logo-animation-hover-states-wp_XxiADvZgit)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/meet-landing-page-vanilla-css-logo-animation-easter-eggs-f0N4MR9dc9)
 - Live Site URL: [Live Site at Vercel](https://meet-landing-page-2.vercel.app/)
 ## My process
 
