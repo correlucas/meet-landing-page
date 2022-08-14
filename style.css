@@ -532,6 +532,7 @@ footer {
 @media (max-width: 25rem) {
   .btn {
     flex-direction: column;
+    /* hover */
   }
 }
 
